@@ -1,0 +1,67 @@
+@keyframes invalid-input{
+    0% {
+        box-shadow: 0 0 0 0 #ed4343;
+    }
+    
+    100% {
+        box-shadow: 0 0 0 0.5rem rgba(237,67,67,.2);
+    }
+}
+
+.register{
+    background: #000000;
+    font-family: ralewaylight;
+    height: 100%;
+    position: absolute;
+    width: 100%;
+}
+
+.register a{
+    text-decoration: none;
+}
+
+.register h1{
+    color: #FFFFFF;
+    font-size: 2.5em;
+    margin: 5% 0;
+    text-align: center;
+    width: 100%;
+}
+.register .forms{
+    margin-bottom: 20%;
+    margin-top: 10%;
+}
+.register form{
+    border-spacing: 1em;
+    display: table;
+    margin: 0 10%;
+    width: 80%;
+}
+
+.register form label{
+    color: #FF0000;
+    display: table-cell;
+    font-size: 1.5em;
+    width: 6em;
+}
+
+.register form input{
+    background: black;
+    border: 0;
+    border-bottom: 1px solid #FFFFFF;
+    color: #FFFFFF;
+    display: table-cell;
+    width: 100%;
+}
+
+.register form select{
+    background: #000000;    
+    color: #FFFFFF;
+}
+.register form select option{
+    color: red;
+}
+
+.register .false{
+    animation: invalid-input .5s infinite;
+}
