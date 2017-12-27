@@ -23,13 +23,12 @@
 .register h1{
     color: #FFFFFF;
     font-size: 2.5em;
-    margin: 5% 0;
+    margin: 3% 0;
     text-align: center;
     width: 100%;
 }
 .register .forms{
-    margin-bottom: 20%;
-    margin-top: 10%;
+    margin: 10% auto;
 }
 .register form{
     border-spacing: 1em;

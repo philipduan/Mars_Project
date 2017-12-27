@@ -11,7 +11,7 @@ class Encounter extends Component {
     };
   }
 
-  componentDidMount() {
+  componentWillMount() {
     axios
       .get("https://red-wdp-api.herokuapp.com/api/mars/encounters")
       .then(response => {
@@ -27,7 +27,7 @@ class Encounter extends Component {
         <h1> Recent Encounters</h1>
         <p> See An Alien? Report It! </p>
         <ul>
-          {this.state.encounters.map(encounter => (
+          {this.state.encounters.reverse().map(encounter => (
             <li key={encounter.id}>
               <p>
                 {encounter.date}-{encounter.atype}

@@ -2,12 +2,15 @@
   "name": "mars_project",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://philipduan.github.io/Mars_Project/",
   "dependencies": {
     "react": "^16.1.0",
     "react-dom": "^16.1.0",
     "react-scripts": "1.0.17"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
@@ -15,6 +18,7 @@
   },
   "devDependencies": {
     "axios": "^0.17.0",
+    "gh-pages": "^1.0.0",
     "react-redux": "^5.0.6",
     "react-router-dom": "^4.2.2",
     "redux": "^3.7.2"

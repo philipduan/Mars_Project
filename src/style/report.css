@@ -34,7 +34,7 @@
   display: flex;
   height: 30%;
   margin: 2em auto;
-  margin-bottom: 20%;
+  margin-bottom: 10%;
   flex-direction: column;
   width: 90%;
 }
@@ -49,13 +49,14 @@
   color: #ff0000;
 }
 
-.report form input {
+.report form textarea {
+  font-family: ralewaylight;
   height: 80%;
   margin: 2em auto;
   width: 100%;
 }
 
-.report form input::placeholder {
+.report form textarea::placeholder {
   color: #ff0000;
 }
 

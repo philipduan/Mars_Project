@@ -16,7 +16,7 @@ class Register extends Component {
       ageInput: true,
       selected: true
     };
-
+    sessionStorage.clear();
     this._handleNameChange = this._handleNameChange.bind(this);
     this._handleAgeChange = this._handleAgeChange.bind(this);
     this._handleJobChange = this._handleJobChange.bind(this);
@@ -71,12 +71,9 @@ class Register extends Component {
         }
       })
         .then(response => {
-          sessionStorage.setItem(
-            "colonist_id",
-            JSON.stringify({
-              id: response.data.colonist.id
-            })
-          );
+          
+          this.props.saveId(response.data.colonist.id);
+          sessionStorage.setItem('colonist',JSON.stringify(response.data.colonist));
         })
         .catch(function(error) {
           console.log(error);
@@ -129,7 +126,7 @@ class Register extends Component {
             <input
               ref="ageInput"
               className={this.state.ageInput.toString()}
-              classtype="number"
+              type="number"
               onChange={this._handleAgeChange}
             />
           </form>

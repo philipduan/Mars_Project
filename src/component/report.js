@@ -57,10 +57,10 @@ class Report extends Component {
         url: "https://red-wdp-api.herokuapp.com/api/mars/encounters",
         data: {
           encounter: {
-            atype: this.state.alienList[this.state.alienId].type,
+            atype: this.state.alienList[this.state.alienId-1].type,
             date: date,
             action: this.state.actionTaken,
-            colonist_id: JSON.parse(sessionStorage.getItem("colonist_id")).id
+            colonist_id: this.props.saveId,
           }
         }
       })
@@ -109,7 +109,7 @@ class Report extends Component {
               </option>
             ))}
           </select>
-          <input
+          <textarea
             className={this.state.actionInput.toString()}
             placeholder="Action Taken"
             onChange={this._handleActionTakenChange}
