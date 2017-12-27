@@ -23,7 +23,7 @@ class Register extends Component {
     this._sendUserProfile = this._sendUserProfile.bind(this);
   }
 
-  componentDidMount() {
+  componentWillMount() {
     axios
       .get("https://red-wdp-api.herokuapp.com/api/mars/jobs")
       .then(response => {

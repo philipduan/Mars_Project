@@ -18,7 +18,7 @@ class Report extends Component {
     this._handleAlienType = this._handleAlienType.bind(this);
   }
 
-  componentDidMount() {
+  componentWillMount() {
     axios
       .get("https://red-wdp-api.herokuapp.com/api/mars/aliens")
       .then(response => {
