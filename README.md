@@ -1,6 +1,8 @@
 ![Alt text](/MarsColony.png)
 # Project 4 - Mars Colony Project
 
+http://www.philipdu.com/Mars_Project/#/
+
 ## Summary
 
 The Mars Colony App was created to be a Single Page Application that could be used to register a new colonist on Mars. For this particular project we used React and SASS for the basic styling. 
