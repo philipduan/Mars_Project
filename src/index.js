@@ -6,7 +6,7 @@ import "./style/reset.css";
 import "./index.css";
 import "./fonts/fonts.css";
 
-//testing comments
+//testing comments of this
 ReactDOM.render(
   <HashRouter>
     <Main />
